@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  h2 { color: #858585; margin-bottom: 0px; }   
+  h3 { color: #ababab; margin-top: 5px; }
+  h4 { color: #c7c7c7; margin-top: 3px; }  
+  
+  /* PRZYCISKI */
+  .przycisk {
+  display: inline-block;
+  background-color: #1a1a1a;  /* Mroczne, tarkovowe tło */
+  color: #9a8866;            /* Złoty/beżowy kolor tekstu */
+  padding: 10px 20px;
+  text-decoration: none;     /* Usuwa domyślne podkreślenie linku */
+  border: 1px solid #9a8866; /* Złota ramka */
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  margin-top: 15px;          /* Odstęp od nagłówka nad nim */
+  margin-bottom: 15px; /* Odstęp od tekstu pod nim */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.przycisk:hover {
+  background-color: #9a8866; /* Odwrócenie kolorów po najechaniu myszką */
+  color: #1a1a1a;
+}
+
+
+/* LOGO */
+.logo-gry {
+  width: 300px;        /* Ustawia szerokość logo na 300 pikseli */
+  height: auto;        /* Wysokość dopasuje się automatycznie, by nie popsuć proporcji */
+  display: block;      /* Sprawia, że logo jest osobnym blokiem i tytuł spadnie pod nie */
+  margin-bottom: 6px; /* Zrobi ładny odstęp między logo a nagłówkiem h2 */
+}
+
+/* WYŚRODKOWANIE I TŁO */
+body {
+  background-color: #2b2b2b;
+  
+  /* NOWE LINIJKI DO WYŚRODKOWANIA: */
+  display: flex;
+  flex-direction: column;   /* Układa elementy jeden pod drugim */
+  align-items: center;       /* Środkuje elementy w poziomie */
+  text-align: center;        /* Środkuje tekst wewnątrz nagłówków */
+}
+
+.strona-układ {
+  display: flex;
+  flex-direction: row;      /* Układ poziom (obok siebie) */
+  align-items: center;      /* Wyrównanie w pionie do środka ekranu */
+  justify-content: center;  /* Środkowanie całości na ekranie komputera */
+  gap: 50px;                /* Duża, ładna przerwa między całym tekstem a zdjęciem */
+  margin-top: 50px;         /* Odstęp od góry przeglądarki */
+}
+
+/* Kontener trzymający tekst i przyciski w pionie */
+.lewa-strona {
+  display: flex;
+  flex-direction: column;   /* Elementy wewnątrz układają się od góry do dołu */
+  align-items: center;      /* Środkowanie przycisków i nagłówków wewnątrz lewej kolumny */
+  text-align: center;       /* Środkowanie samego tekstu nagłówków */
+}
+
+/* Styl dla zdjęcia po prawej stronie */
+.zdjęcie-bok {
+  width: auto;            
+  height: 500px;
+}
+</style>
+
+<title>  Patch notes. </title>
+</head>
+<body>
+    <div class="strona-układ">
+	    <div class="lewa-strona">
+            <img src="logo.png" alt="Escape from Tarkov Logo" class="logo-gry">
+
+            <div>
+                <h2>Patch notes. Escape from Tarkov.</h2>
+                <h3>Patch 1.1.0.0</h3>
+            </div>
+		
+            <div>
+                <a href="file:///C:/Users/rzufi/Desktop/takoje%20takie/HIPER1.html" target="_blank" class="przycisk">Changes</a>
+                <h4>What is Escape from Tarkov?<h4>
+            </div>
+		
+            <div>
+                <h4>Escape from Tarkov is a hardcore, realistic online first-person action RPG and extraction shooter developed by Battlestate Games</h4>
+            </div>
+		
+            <div>
+                <h4>Set in a fictional, war-torn Russian industrial city, players enter matches ("raids") to scavenge for gear,</h4>
+            </div>
+		
+            <div>
+                <h4>fight other players and AI, and attempt to escape alive.</h4>
+            </div>
+		
+            <div>
+                <a href="https://www.escapefromtarkov.com" target="_blank" class="przycisk">Tarkov Web Site</a>
+                <a href="file:///C:/Users/rzufi/Desktop/takoje%20takie/HIPER2.html" target="_blank" class="przycisk">About Battlestate</a>
+            </div>
+		
+            <div>
+                <a href="https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov_Wiki" target="_blank" class="przycisk">Tarkov Wiki</a>
+            </div>
+	    </div>
+		<img src="BIGPIPE.jpg" alt="Big Pipe, one of Tarkov's bosses" class="zdjęcie-bok">
+    </div>
